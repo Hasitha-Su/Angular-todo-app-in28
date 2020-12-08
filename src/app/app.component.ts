@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  //component name , tag name
-  selector: 'app-root',
+  
+  selector: 'app-root', // component name , tag name
 
-  //html file location of the component
+  // html file location or template of the component
+  // template: '<h2>Yoo Im coming from right outta template</h2>',
   templateUrl: './app.component.html',
 
   //styling file location of the component
@@ -13,7 +14,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title = 'todo';
-  testMessage = 'test message' //interpollation
+  testMessage = 'test message' // interpollation
 
 
 }
