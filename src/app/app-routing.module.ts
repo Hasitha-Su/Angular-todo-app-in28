@@ -9,7 +9,11 @@ const routes: Routes = [
   // defining an object
   { path:'', component: LoginComponent },
   { path:'login', component: LoginComponent },
-  { path:'welcome', component: WelcomeComponent},
+
+  
+  // { path:'welcome', component: WelcomeComponent},
+  // router with parameters
+  { path:'welcome/:name', component: WelcomeComponent},
 
   //Anything else defined
   { path:'**', component: ErrorComponent },
