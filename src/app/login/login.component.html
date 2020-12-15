@@ -1,0 +1,24 @@
+
+<!-- Login component
+    get data from component and tie it to the template -->
+<!-- User name: <input type="text" name="username" value="{{username}}" >
+Password: <input type="text" name="password" value={{password}}> -->
+
+<!-- prints user name-->
+<!-- username : {{username}} -->
+
+<small *ngIf='invalidLogin'> {{errorMessage}} </small>
+
+<!-- 2 way data binding -->
+User name: <input type="text" name="username" [(ngModel)]="username" >
+Password: <input type="text" name="password" [(ngModel)]="password" >
+
+
+
+<!-- event bind = what We Should Do  here Click event is used       
+    onc click event handleLogin  method is called
+
+    loginHandle is defined in relkated component file
+
+-->
+<button (click)=handleLogin()>Login</button>

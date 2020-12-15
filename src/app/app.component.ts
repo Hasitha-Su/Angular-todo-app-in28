@@ -15,6 +15,4 @@ export class AppComponent {
 
   title = 'todo';
   testMessage = 'test message' // interpollation
-
-
 }
