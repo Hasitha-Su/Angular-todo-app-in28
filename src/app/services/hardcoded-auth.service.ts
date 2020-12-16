@@ -18,7 +18,6 @@ export class HardcodedAuthService {
     } else {
       return false
     }
-
   }
 
   //check if user logged in
@@ -26,6 +25,12 @@ export class HardcodedAuthService {
     let user = sessionStorage.getItem('authenticatedUser')
     return !(user === null)
   }
+
+  //logout user
+  logout(){
+    sessionStorage.removeItem('authenticatedUser')
+  }
+
 
 
 }
