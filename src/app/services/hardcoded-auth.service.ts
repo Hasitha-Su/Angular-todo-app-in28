@@ -8,21 +8,21 @@ export class HardcodedAuthService {
   constructor() { }
 
   //implement method to user authenticate
-  authenticate(username, password){
+  authenticate(username, password) {
 
-    if(password === 'pass'){
+    if (password === 'pass') {
       //console.log('before '+ this.isUserLoggedIn() )
       sessionStorage.setItem('authenticatedUser', username)
       //console.log('after '+ this.isUserLoggedIn() )
       return true
-    }else{
+    } else {
       return false
     }
 
   }
 
-  //check user auth
-  isUserLoggedIn(){
+  //check if user logged in
+  isUserLoggedIn() {
     let user = sessionStorage.getItem('authenticatedUser')
     return !(user === null)
   }
